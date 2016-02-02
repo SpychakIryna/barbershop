@@ -7,27 +7,26 @@ body {
   min-width: 1122px;
   margin: 0;
   padding: 0;
-  }
+}
 
-  h1 {
-    font-size: 30px;
-    line-height: auto;
-  }
+h1 {
+  font-size: 30px;
+  line-height: auto;
+}
 
-  h2 {
-    font-size: 24px;
-    line-height: auto;
-  }
+h2 {
+  font-size: 24px;
+  line-height: auto;
+}
 
- .clearfix::after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
- }
+}
 
- .main-header {
-   margin-bottom: 60px;
-   background: #b7b7b7;
+.main-header {
+  background: #b7b7b7;
 }
 
 .main-navigation {
@@ -35,6 +34,10 @@ body {
   width: 780px;
   min-height: 70px;
   background:yellow;
+}
+
+.main-navigation li{
+  display: inline;
 }
 
 .user-block{
@@ -49,42 +52,51 @@ body {
   margin: 0 auto;
   padding: 0 10px;
   background: green;
- }
+}
 
 .title {
   float:left;
   width:940px;
-  min-height:80px;
+  min-height:85px;
   margin-bottom:50px;
   background: yellow;
 }
 
+.breadcrumbs li,
+.breadcrumbs p {
+  display: inline;
+}
+
 .forms {
-    float:left;
-    width:170px;
-    min-height:580px;
-    margin-right:65px;
-    background:yellow;
+  float:left;
+  width:170px;
+  min-height:580px;
+  margin-right:65px;
+  background:yellow;
+}
+
+.forms label {
+  display: block;
 }
 
 .card-layout {
-    float:right;
-    width:700px;
-    height:700px;
-    background:yellow;
+  float:right;
+  width:700px;
+  height:700px;
+  background:yellow;
 }
 
 article {
-    float:left;
-    width:220px;
-    height:285px;
-    margin-right:20px;
-    margin-bottom:20px;
-    background:orange;
-    }
+  float:left;
+  width:220px;
+  height:285px;
+  margin-right:20px;
+  margin-bottom:20px;
+  background:orange;
+}
 
 article:nth-child(3n+3){
-    margin-right:0px;}
+ margin-right:0px;}
 
 .btn-pages {
  float:left;
@@ -93,11 +105,15 @@ article:nth-child(3n+3){
  background:orange;
 }
 
+.btn-pages li{
+  display:inline;
+}
+
 .picture {
   float:left;
-  width:510px;
-  height:705px;
-  margin-right:35px;
+  width:470px;
+  height:685px;
+  margin-right:80px;
   background:yellow;
 }
 
@@ -110,22 +126,20 @@ article:nth-child(3n+3){
 }
 
 .price {
-    float:right;
-    width:390px;
-    min-height:50px;
-    margin-bottom:50px;
-    background:yellow;
+  width:188px;
+  min-height:45px;
+  margin-bottom:50px;
+  background:red;
 }
 
 .list {
-    float:right;
-    width:390px;
-    min-height:175px;
-    background:yellow;
+  float:right;
+  width:390px;
+  min-height:175px;
+  background:yellow;
 }
 
 .main-footer {
-  margin-top: 50px;
   padding-top: 60px;
   padding-bottom: 40px;
   background: #b7b7b7;
