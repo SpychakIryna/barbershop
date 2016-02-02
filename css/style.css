@@ -4,6 +4,9 @@ body {
   color: 000000;
   font-weight: bold;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
+  min-width: 1122px;
+  margin: 0;
+  padding: 0;
   }
 
   h1 {
@@ -15,3 +18,137 @@ body {
     font-size: 24px;
     line-height: auto;
   }
+
+ .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+ }
+
+ .main-header {
+   margin-bottom: 60px;
+   background: #b7b7b7;
+}
+
+.main-navigation {
+  float: left;
+  width: 780px;
+  min-height: 70px;
+  background:yellow;
+}
+
+.user-block{
+  float: right;
+  width: 140px;
+  min-height: 70px;
+  background:yellow;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background: green;
+ }
+
+.title {
+  float:left;
+  width:940px;
+  min-height:80px;
+  margin-bottom:50px;
+  background: yellow;
+}
+
+.forms {
+    float:left;
+    width:170px;
+    min-height:580px;
+    margin-right:65px;
+    background:yellow;
+}
+
+.card-layout {
+    float:right;
+    width:700px;
+    height:700px;
+    background:yellow;
+}
+
+article {
+    float:left;
+    width:220px;
+    height:285px;
+    margin-right:20px;
+    margin-bottom:20px;
+    background:orange;
+    }
+
+article:nth-child(3n+3){
+    margin-right:0px;}
+
+.btn-pages {
+ float:left;
+ height:55px;
+ min-width:195px;
+ background:orange;
+}
+
+.picture {
+  float:left;
+  width:510px;
+  height:705px;
+  margin-right:35px;
+  background:yellow;
+}
+
+.description {
+  float:right;
+  width:390px;
+  min-height:195px;
+  margin-bottom:30px;
+  background:yellow;
+}
+
+.price {
+    float:right;
+    width:390px;
+    min-height:50px;
+    margin-bottom:50px;
+    background:yellow;
+}
+
+.list {
+    float:right;
+    width:390px;
+    min-height:175px;
+    background:yellow;
+}
+
+.main-footer {
+  margin-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: #b7b7b7;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  min-height: 90px;
+  background:yellow;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  min-height: 90px;
+  background:yellow;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+  min-height: 90px;
+  background:yellow;
+}
