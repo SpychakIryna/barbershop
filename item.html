@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-navigation">
+          <a class="logo-header" href="index.html">
+            <img src="img/Logo.png" width="111" heigth="24" alt="logo">
+          </a>
           <ul>
-            <li>
-              <a href="#">
-                <img src="img/Logo.png" width="111" heigth="24" alt="logo">
-              </a>
-            </li>
             <li>
               <a href="#">Информация</a>
             </li>
@@ -24,7 +24,7 @@
             <li>
               <a href="#">Прайс-лист</a>
             </li>
-            <li>
+            <li class="active">
               <a href="#">Магазин</a>
             </li>
             <li>
@@ -38,7 +38,7 @@
       </div>
     </header>
     <main class="container clearfix">
-      <section class="title">
+      <section class="page-title">
         <h1>НАБОР ДЛЯ ПУТЕШЕСТВИЙ "BAXTER OF CALIFORNIA"</h1>
           <ul class="breadcrumbs">
             <li>
@@ -50,34 +50,35 @@
             <li>
               <a href="#">СРЕДСТВА ДЛЯ УХОДА</a>
             </li>
-            <li>
-              <p>НАБОР ДЛЯ ПУТЕШЕСТВИЙ "BAXTER OF CALIFORNIA"</p>
+            <li class="current">
+              НАБОР ДЛЯ ПУТЕШЕСТВИЙ "BAXTER OF CALIFORNIA"
             </li>
           </ul>
       </section>
-      <section class="picture">
-         <img class="main-picture" src="img/item_main.jpg" width="460" height="498" alt="Baxter_main">
-         <img class="miniature" src="img/item_mini1.jpg" width="140" height="149" alt="mini_1">
-         <img class="miniature" src="img/item_mini2.jpg" width="140" height="149" alt="mini_2">
-         <img class="miniature" src="img/item_mini3.jpg" width="140" height="149" alt="mini_3">
-      </section>
-      <section class="description">
-        <p>ЕСТЬ В НАЛИЧИИ</p>
-        <span>АРТИКУЛ: DEXTER-AE</span>
-        <p>TRAVEL KIT-НЕОБХОДИМЫЙ АКСЕССУАР ВО ВРЕМЯ ЛЮБОГО<br>
-           ПУТЕШЕСТВИЯ.В АККУРАТНОЙ КОЖАНОЙ СУМКЕ НАХОДИТСЯ ВСЕ,ЧТО<br>
-           НУЖНО ДЛЯ БРИТЬЯ И УХОДА ЗА КОЖЕЙ ВО ВРЕМЯ РАБОЧЕЙ ПОЕЗДКИ<br>
-           ИЛИ ОТДЫХА:СРЕДСТВО ДЛЯ УМЫВАНИЯ,УВЛАЖНЯЮЩИЙ КРЕМ,КРЕМ<br>
-           ДЛЯ БРИТЬЯ,КРЕМ ПОСЛЕ БРИТЬЯ,ШАМПУНЬ.НАБОР ТАКЖЕ МОЖЕТ<br>
+      <div class="content clearfix">
+       <section class="picture">
+         <img class="picture-main" src="img/item_main.jpg" width="460" height="498" alt="Baxter_main">
+         <img class="picture-miniature" src="img/item_mini3.jpg" width="140" height="149" alt="mini_3">
+         <img class="picture-miniature" src="img/item_mini2.jpg" width="140" height="149" alt="mini_2">
+         <img class="picture-miniature" src="img/item_mini1.jpg" width="140" height="149" alt="mini_1">
+       </section>
+       <section class="description">
+        <span>ЕСТЬ В НАЛИЧИИЕ</span>
+        <span class="item-code">АРТИКУЛ: DEXTER-AE</span>
+        <p>TRAVEL KIT-НЕОБХОДИМЫЙ АКСЕССУАР ВО ВРЕМЯ ЛЮБОГО
+           ПУТЕШЕСТВИЯ.В АККУРАТНОЙ КОЖАНОЙ СУМКЕ НАХОДИТСЯ ВСЕ,ЧТО
+           НУЖНО ДЛЯ БРИТЬЯ И УХОДА ЗА КОЖЕЙ ВО ВРЕМЯ РАБОЧЕЙ ПОЕЗДКИ
+           ИЛИ ОТДЫХА:СРЕДСТВО ДЛЯ УМЫВАНИЯ,УВЛАЖНЯЮЩИЙ КРЕМ,КРЕМ
+           ДЛЯ БРИТЬЯ,КРЕМ ПОСЛЕ БРИТЬЯ,ШАМПУНЬ.НАБОР ТАКЖЕ МОЖЕТ
            СТАТЬ ОТЛИЧНЫМ ПОДАРКОМ.</p>
-           <div class="price">
-             <span>2 900 РУБ.</span>
+           <div class="price-block">
+             <span class="btn price">2 900 РУБ.</span>
              <a class="btn" href="#">КУПИТЬ</a>
            </div>
-      </section>
-      <section class="list">
+       </section>
+       <section class="item-list">
         <h2>В НАБОР ВХОДЯТ:</h2>
-        <ul>
+        <ul class="list">
           <li>
             СРЕДСТВО ДЛЯ УМЫВАНИЯ (50МЛ)
           </li>
@@ -95,6 +96,7 @@
           </li>
         </ul>
       </section>
+    </div>
     </main>
     <footer class="main-footer">
       <div class="container clearfix">
@@ -106,9 +108,9 @@
         </section>
         <section class="footer-social">
           <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
-          <a class="social-btn social-btn-vk" href="#">ВК</a>
-          <a class="social-btn social-btn-fb" href="#">ФБ</a>
-          <a class="social-btn social-btn-inst" href="#">ИГ</a>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Иистаграм</a>
         </section>
         <section class="footer-copyright">
           <p>РАЗРАБОТАНО:</p>
