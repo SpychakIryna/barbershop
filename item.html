@@ -71,7 +71,7 @@
            ИЛИ ОТДЫХА:СРЕДСТВО ДЛЯ УМЫВАНИЯ,УВЛАЖНЯЮЩИЙ КРЕМ,КРЕМ
            ДЛЯ БРИТЬЯ,КРЕМ ПОСЛЕ БРИТЬЯ,ШАМПУНЬ.НАБОР ТАКЖЕ МОЖЕТ
            СТАТЬ ОТЛИЧНЫМ ПОДАРКОМ.</p>
-           <div class="price-block">
+           <div class="price-block clearfix">
              <span class="btn price">2 900 РУБ.</span>
              <a class="btn" href="#">КУПИТЬ</a>
            </div>
@@ -118,6 +118,26 @@
         </section>
       </div>
     </footer>
+    <div class="modal-block">
+      <button class="modal-block-close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="modal-block-title">Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="icon-user" type="text" name="login" placeholder="Логин">
+        <input class="icon-password" type="password"  name="password" placeholder="Пароль">
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember">
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+        <button class="btn" type="submit">Войти</button>
+    </div>
+    <div class="modal-block-map">
+      <button class="modal-block-close" type="button" title="Закрыть">Закрыть</button>
+      <div id="yandex-map"></div>
+    </div>
+    <div class="modal-overlay"></div>
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
   </body>
 </html>

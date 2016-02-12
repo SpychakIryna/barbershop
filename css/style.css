@@ -6,7 +6,7 @@ body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
-  background: #f9f6f3 url ("../img/bg_item.jpg") repeat;
+  background: #f9f6f3 url("../img/bg_item.jpg") repeat;
   margin: 0;
   padding: 0;
 }
@@ -131,7 +131,9 @@ body {
 
 .page-title {
   float:left;
-  margin-bottom:60px;
+  padding:0;
+  margin:0;
+  margin-bottom:52px;
   min-width:800px;
 }
 
@@ -160,7 +162,6 @@ body {
   position: absolute;
   top: 4px;
   right: 18px;
-
   width: 8px;
   height: 8px;
 
@@ -188,9 +189,7 @@ body {
 .btn {
   display: inline-block;
   float:left;
-  margin-right: 16px;
   padding: 10px 20px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
@@ -200,7 +199,6 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-
   background-color: #000000;
   border: none;
   outline: none;
@@ -216,6 +214,7 @@ body {
   cursor: default;
   padding: 10px 25px;
   margin:0;
+  min-width:60px;
   background-color:#e5e5e5;
 }
 
@@ -231,7 +230,6 @@ body {
 
 .btn-pages li{
   display:inline;
-  height:43px;
   padding:0;
   margin:0;
   font-size: 14px;
@@ -256,12 +254,10 @@ body {
 .content h2 {
   font-size: 24px;
   line-height: 29px;
-  margin-top:0;
+  margin:0;
+  margin-bottom:25px;
   padding:0;
 }
-
-/*  margin-bottom:32px;
-  margin-top:52px;*/
 
 .content p {
   font-size: 14px;
@@ -310,10 +306,16 @@ body {
   color:#c7c5c2;
 }
 
+.description .price-block {
+  margin:0;
+}
+
+
 .content .item-list {
   float:right;
   width:380px;
   padding:0px;
+  margin:0;
   margin-top:25px;
   margin-bottom:40px;
 }
@@ -391,27 +393,33 @@ input[type="checkbox"]:checked + label::after {
 input[type="radio"] + label::before {
   content:"";
   display:block;
-  width:20px;
-  height:20px;
+  width:16px;
+  height:16px;
   border: 2px solid #000000;
-  border-radius:12px;
+  border-radius:50%;
   background-color: #f9f6f3;
   position:absolute;
-  top:0;
   left:0;
+  top:0;
 }
 
 input[type="radio"]:checked + label::after {
   content:"";
   display:block;
   position:absolute;
-  top:7px;
-  left:7px;
-  width:9px;
-  height:9px;
-  border-radius:10px;
+  top:6px;
+  left:6px;
+  width:8px;
+  height:8px;
+  border-radius:50%;
   background-color: #000000;
 }
+
+.filtr-form .btn {
+  margin-top:30px;
+  width:110px;
+}
+
 
 .content .card-layout {
   float:right;
@@ -425,7 +433,7 @@ input[type="radio"]:checked + label::after {
   text-transform: none;
   color:#000000;
   width:220px;
-  max-height:285px;
+  min-height:270px;
   margin:0;
   margin-right:20px;
   margin-bottom:20px;
@@ -437,14 +445,31 @@ input[type="radio"]:checked + label::after {
   margin-right:0px;
 }
 
+.card-layout img {
+  margin:0;
+}
+
 .item .item-name  {
+  padding:0;
+  margin:13px;
+}
+
+.item-name a {
   font-size:14px;
   line-height:18px;
+  padding:0;
+  margin:0;
   color:#000000;
   text-decoration:none;
 }
 
-.item .price-block {
+.price-block {
+  padding:0;
+  margin:13px;
+}
+
+.price-block .btn {
+  margin:0;
 }
 
 .main-footer {
@@ -537,4 +562,177 @@ input[type="radio"]:checked + label::after {
 .footer-copyright .btn:hover {
   color: #000000;
   background-color: #ffffff;
+}
+
+/*Модальные окна*/
+
+.modal-block {
+  position: absolute;
+  display:none;
+  top: 120px;
+  left: 50%;
+  width:300px;
+  margin-left: -230px;
+  padding:50px 80px;
+  color: #000000;
+  background:#f9f6f3 url("../img/bg_item.jpg") repeat;
+}
+
+.modal-block-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  display: none;
+  width: 766px;
+  height: 561px;
+  margin-top: -280px;
+  margin-left: -390px;
+  background: #ffffff url("../img/map.png");
+  border: 7px solid white;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-block-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color:transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.modal-block-close::before,
+.modal-block-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+}
+
+.modal-block-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-block-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-block h2 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-block p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.modal-block .login-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.modal-block input[type="text"],
+.modal-block input[type="password"] {
+  width: 236px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  padding-right: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.modal-block input:focus {
+  border-color: #663d15;
+}
+
+.modal-block input.icon-user {
+  background-image: url("img/sprite.png") no-repeat;
+}
+
+.modal-block input.icon-password {
+  background-image: url("img/sprite.png") no-repeat;
+}
+
+.login-form .restore {
+  float: right;
+  color: #000000;
+}
+
+.login-form .btn {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.login-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.login-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.login-checkbox:hover {
+  color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 15px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
 }

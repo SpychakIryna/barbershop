@@ -69,67 +69,38 @@
           <input type="checkbox" id="item-6" name="AMERICAN CREW" checked>
           <label for="item-6">AMERICAN CREW</label>
           <h2>ГРУППЫ ТОВАРОВ:</h2>
-          <input type="radio" id="item7" name="question" value="gadget">
+          <input type="radio" id="item-7" name="question" value="gadget">
           <label for="item-7">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
-          <input type="radio" id="item8" name="question" value="care" checked>
+          <input type="radio" id="item-8" name="question" value="care" checked>
           <label for="item-8">СРЕДСТВА ДЛЯ УХОДА</label>
-          <input type="radio" id="item9" name="question" value="accessories">
+          <input type="radio" id="item-9" name="question" value="accessories">
           <label for="item-9">АКСЕССУАРЫ</label>
           <input class ="btn" type="submit" value="Показать">
         </form>
        </div>
        <div class="card-layout">
          <article class="item">
-           <a href="#">
-             <img src="img/card_1.jpg" width="220" height="165" alt="Набор для путешествий">
-           </a>
-           <a class="item-name" href="#">Набор для путешествий<br>
-             "BAXTER OF CALIFORNIA"</a>
-            <div class="price-block">
-                <span class="btn price">2 900 РУБ.</span>
-                <a class="btn" href="#">КУПИТЬ</a>
-          </div>
-          </article>
-          <article class="item">
-            <a href="#">
-              <img src="img/card_2.jpg" width="220" height="165" alt="Кондиционер">
-            </a>
-            <a class="item-name" href="#">Увлажняющий кондиционер<br>
-                       "BAXTER OF CALIFORNIA"</a>
-            <div class="price-block">
-              <span class="btn price">750 РУБ.</span>
-              <a class="btn" href="#">КУПИТЬ</a>
-            </div>
-          </article>
-          <article class="item">
-            <a href="#">
-              <img src="img/card_3.jpg" width="220" height="165" alt="Гель дял волос">
-            </a>
-            <a class="item-name" href="#">Гель для волос<br>
-             "SUAVECITO"</a>
-            <div class="price-block">
-              <span class="btn price">290 РУБ.</span>
-              <a class="btn" href="#">КУПИТЬ</a>
-            </div>
-          </article>
-          <article class="item">
             <a href="#">
               <img src="img/card_1.jpg" width="220" height="165" alt="Набор для путешествий">
             </a>
-            <a class="item-name" href="#">Набор для путешествий<br>
+            <div class="item-name">
+            <a href="#">Набор для путешествий<br>
               "BAXTER OF CALIFORNIA"</a>
-             <div class="price-block">
+            </div>
+             <div class="price-block clearfix">
                  <span class="btn price">2 900 РУБ.</span>
                  <a class="btn" href="#">КУПИТЬ</a>
-           </div>
+             </div>
            </article>
            <article class="item">
              <a href="#">
                <img src="img/card_2.jpg" width="220" height="165" alt="Кондиционер">
              </a>
-             <a class="item-name" href="#">Увлажняющий кондиционер<br>
+             <div class="item-name">
+                 <a href="#">Увлажняющий кондиционер<br>
                         "BAXTER OF CALIFORNIA"</a>
-             <div class="price-block">
+            </div>
+             <div class="price-block clearfix">
                <span class="btn price">750 РУБ.</span>
                <a class="btn" href="#">КУПИТЬ</a>
              </div>
@@ -138,9 +109,11 @@
              <a href="#">
                <img src="img/card_3.jpg" width="220" height="165" alt="Гель дял волос">
              </a>
-             <a class="item-name" href="#">Гель для волос<br>
+             <div class="item-name">
+             <a href="#">Гель для волос<br>
               "SUAVECITO"</a>
-             <div class="price-block">
+            </div>
+             <div class="price-block clearfix">
                <span class="btn price">290 РУБ.</span>
                <a class="btn" href="#">КУПИТЬ</a>
              </div>
@@ -149,9 +122,11 @@
             <a href="#">
               <img src="img/card_4.jpg" width="220" height="165" alt="Глина для укладки">
             </a>
-            <a class="item-name" href="#">Глина для укладки волос<br>
+            <div class="item-name">
+            <a href="#">Глина для укладки волос<br>
                         "AMERICAN CREW"</a>
-            <div class="price-block">
+            </div>
+            <div class="price-block clearfix">
               <span class="btn price">500 РУБ.</span>
               <a class="btn" href="#">КУПИТЬ</a>
             </div>
@@ -160,9 +135,11 @@
             <a href="#">
               <img src="img/card_5.jpg" width="220" height="165" alt="Гель для волос">
             </a>
-            <a class="item-name" href="#">Гель для волос<br>
+            <div class="item-name">
+            <a href="#">Гель для волос<br>
                         "AMERICAN CREW"</a>
-            <div class="price-block">
+            </div>
+            <div class="price-block clearfix">
             <span class="btn price">300 РУБ.</span>
             <a class="btn" href="#">КУПИТЬ</a>
             </div>
@@ -171,9 +148,11 @@
             <a href="#">
               <img src="img/card_6.jpg" width="220" height="165" alt="Набор для бритья">
             </a>
-            <a class="item-name" href="#">НАБОР ДЛЯ БРИТЬЯ<br>
+            <div class="item-name">
+            <a href="#">НАБОР ДЛЯ БРИТЬЯ<br>
                        "BAXTER OF CALIFORNIA"</a>
-            <div class="price-block">
+            </div>
+            <div class="price-block clearfix">
               <span class="btn price">3 900 РУБ.</span>
               <a class="btn" href="#">КУПИТЬ</a>
             </div>
@@ -216,6 +195,26 @@
         </section>
       </div>
     </footer>
+    <div class="modal-block">
+      <button class="modal-block-close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="modal-block-title">Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="icon-user" type="text" name="login" placeholder="Логин">
+        <input class="icon-password" type="password"  name="password" placeholder="Пароль">
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember">
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+        <button class="btn" type="submit">Войти</button>
+    </div>
+    <div class="modal-block-map">
+      <button class="modal-block-close" type="button" title="Закрыть">Закрыть</button>
+      <div id="yandex-map"></div>
+    </div>
+    <div class="modal-overlay"></div>
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
   </body>
 </html>
