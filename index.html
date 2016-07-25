@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
-    <link rel="stylesheet" href="css/normalize.css">
-    <noscript>
-      <link rel="stylesheet" href="css/noscript.css">
-    </noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-index">
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-navigation">
@@ -32,7 +30,7 @@
           </ul>
         </nav>
         <div class="user-block">
-          <a class="login" href="/login">Вход</a>
+          <a class="login" href="#">Вход</a>
         </div>
       </div>
     </header>
@@ -73,11 +71,11 @@
           <h2 class="index-content-title">Фотогалерея</h2>
           <div class="gallery">
             <figure class="gallery-content">
-              <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a>
-              <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a>
-              <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a>
-              <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a>
+              <a href="#"><img src="img/index-gallery.jpg" width="286" height="164" alt=""></a>
             </figure>
+            <button class="btn gallery-prev" disabled>Назад</button>
+            <button class="btn gallery-next">Вперёд</button>
+          </div>
           </div>
         </div>
       </div>
@@ -115,7 +113,7 @@
         <section class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
+          <a class="js-open-map" href="#">Как нас найти?</a><br>
           Телефон: +7 (812) 666-02-66
         </section>
         <section class="footer-social">
@@ -130,9 +128,9 @@
         </section>
       </div>
     </footer>
-    <div class="modal-content">
-      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-      <h2 class="modal-content-title">Личный кабинет</h2>
+    <div class="modal-block">
+      <button class="modal-block-close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="modal-block-title">Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <input class="icon-user" type="text" name="login" placeholder="Логин">
@@ -146,31 +144,11 @@
         <button class="btn" type="submit">Войти</button>
       </form>
     </div>
-    <div class="modal-content-map">
-      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-      <div id="yandex-map"></div>
+    <div class="modal-block-map">
+      <button class="modal-block-close" type="button" title="Закрыть">Закрыть</button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412369!2d30.320894615702546!3d59.938796869048396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1456056745873" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-
-    <script>
-      var gallery = document.querySelector(".gallery");
-      gallery.classList.add("gallery-live");
-
-      // Добавляем управляющие элементы
-      // Внимание! Плохая практика.
-      // Только для быстрой демонстрации подхода.
-      var buttons =
-        '<button class="btn gallery-prev" type="button">Назад</button>' +
-        '<button class="btn gallery-next" type="button">Вперед</button>';
-
-      gallery.innerHTML = gallery.innerHTML + buttons;
-
-      // Зададим начальное состояние кнопок
-      var prev = document.querySelector(".gallery-prev");
-      prev.setAttribute('disabled', 'disabled');
-
-      // Инициализация завершена
-      // Далее — типовой код работы галереи:
-      // обработка событий, переключение слайдов и т.д.
-    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/modal-block.min.js"></script>
   </body>
 </html>
