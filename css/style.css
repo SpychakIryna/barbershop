@@ -100,7 +100,8 @@ body {
 
 .user-block{
   float: right;
-  width: 140px;
+
+
 }
 
 .user-block .login {
@@ -140,7 +141,7 @@ body {
   height: 204px;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .index-logo img {
@@ -150,7 +151,7 @@ body {
 }
 
 .features {
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 
 .features-item {
@@ -168,7 +169,7 @@ body {
   position: relative;
   display: block;
   margin-bottom: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   font-size: 30px;
   line-height: 42px;
 }
@@ -192,8 +193,8 @@ body {
 }
 
 .index-content {
-  margin-bottom: 35px;
-  padding: 50px 80px;
+  margin-bottom: 38px;
+  padding: 45px 83px;
   color: #000000;
   background: url("../img/index-content-shadow.png") no-repeat center,
   #f8f5f2 url("../img/pattern-white.jpg");
@@ -211,14 +212,14 @@ body {
 
 .index-content-title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 42px;
 }
 
 .index-content p {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .news-preview {
@@ -230,7 +231,11 @@ body {
 }
 
 .news-preview li {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+.news-preview li:last-child {
+  margin-bottom: 30px;
 }
 
 .news-preview p {
@@ -260,34 +265,17 @@ body {
   height: 164px;
 }
 
-.gallery .btn {
-  position: absolute;
-  bottom: 0;
-  width: 140px;
-  margin: 0;
-}
-
-.gallery-prev {
-  left: 0;
-}
-
-.gallery-next {
-  right: 0;
-}
-
 .appointment-form input {
   float: left;
   width: 106px;
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 7px 15px;
-
   font-size: 14px;
   line-height: 24px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
-
   background-color: #f9f6f3;
   border: 2px solid #000000;
   outline: none;
@@ -299,11 +287,6 @@ body {
 
 .appointment-form input:nth-child(2n) {
   margin-right: 0;
-}
-
-.appointment-form .btn {
-  clear: both;
-  width: 100%;
 }
 
 .page-title {
@@ -365,7 +348,7 @@ body {
 
 .btn {
   display: inline-block;
-  /*float: left;*/
+  float: left;
   padding: 10px 18px;
   font-weight: 700;
   font-size: 14px;
@@ -403,6 +386,27 @@ body {
   padding: 10px 33px;
 }
 
+.gallery .btn {
+  position: absolute;
+  bottom: 0;
+  width: 140px;
+  margin: 0;
+}
+
+.gallery-prev {
+  left: 0;
+}
+
+.gallery-next {
+  right: 0;
+}
+
+.appointment-form .btn {
+  clear: both;
+  width: 100%;
+  margin-right: 0;
+}
+
 .btn.price {
   color: #000000;
   cursor: default;
@@ -432,9 +436,8 @@ body {
 }
 
 .btn-pages a {
-  display: block;
-  padding: 10 18px;
-  margin: 0 3px;
+  /*display: block;*/
+  margin-right: 7px;
 }
 
 .btn-pages .active {
